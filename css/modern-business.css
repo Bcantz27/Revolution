@@ -1,0 +1,167 @@
+/* Global Styles */
+
+html,
+body {
+    height: 100%;
+}
+/** {
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}*/
+
+body {
+
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+.fa-circle{
+    color: #541860;
+}
+
+.well {
+    border: 1px solid #939393;
+    -webkit-box-shadow: 10px 10px 20px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 20px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 20px -8px rgba(0,0,0,0.75);
+}
+
+.panel {
+    -webkit-box-shadow: 10px 10px 20px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 20px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 20px -8px rgba(0,0,0,0.75);
+}
+
+hr{
+    border-top: 1px solid #000000;
+}
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Footer Styles */
+
+footer {
+    margin: 50px 0;
+}
+
+nav{
+    margin-top: 20px;
+    padding: 10px 0px;
+    position: relative;
+}
+
+#nav-list{
+    text-align: center;
+}
+
+#success {
+    border:solid 1px #83D186;
+    padding:25px 10px;
+    margin:25px 0px;
+    display:block;
+    width:437px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    font-weight:bold;
+    display:none;
+    visibility: hidden;
+}
+
+#success.visible {
+    display:block;
+    visibility: visible;
+}
+
+#nav-list li a[class="active"]{
+    background-color: #585b5f;
+}
+
+#nav-list li:hover{
+    background-color: #585b5f;
+}
+
+#nav-list li{
+    margin-left: 15px;
+}
+
+#nav-list li a{
+    font-family: sans-serif;
+    font-size: 28px;
+}
+
+.hide-lg {
+    visibility: visible;
+}
+
+.hide-md {
+    visibility: hidden;
+}
+
+.hide-sm{
+    visibility: hidden;
+}
+
+.showOn-lg {
+    visibility: hidden;
+    position: absolute;
+}
+
+/* Responsive Styles */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .hide-sm{
+        visibility: visible;
+    }
+    #nav-list{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .hide-lg {
+        visibility: hidden;
+    }
+
+    .hide-md {
+        visibility: visible;
+    }
+
+    #nav-list li{
+        margin-left: 25px;
+    }
+    .showOn-lg {
+        visibility: visible;
+        position: relative;
+    }
+}
